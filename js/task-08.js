@@ -15,9 +15,11 @@ function onFormSubmit(event) {
   };
 
   if (mail === "" || password === "") {
-    alert("А ты тчоно не робот?");
+    return alert("А ты тчоно не робот?");
   } else {
     event.currentTarget.reset();
   }
+
   console.log("formData", formData);
+  return formData;
 }
